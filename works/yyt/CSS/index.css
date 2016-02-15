@@ -1,0 +1,475 @@
+.banner{
+    height: 600px;
+    position: relative;
+
+}
+.banner ul li{
+    display: none;
+}
+.banner li.banner1{
+    display: block;
+}
+.banner li.banner1 a{
+    display: block;
+    height: 600px;
+    background: url("../images/banner1.jpg")no-repeat top center;
+}
+.banner li.banner2 a{
+    display: block;
+    height: 600px;
+    background: url("../images/banner2.jpg")no-repeat top center;
+}
+.banner li.banner3 a{
+    display: block;
+    height: 600px;
+    background: url("../images/banner3.jpg")no-repeat top center;
+}
+.banner li.banner4 a{
+    display: block;
+    height: 600px;
+    background: url("../images/banner4.jpg")no-repeat top center;
+}
+.banner li.banner5 a{
+    display: block;
+    height: 600px;
+    background: url("../images/banner5.jpg")no-repeat top center;
+}
+.banner li.banner6 a{
+    display: block;
+    height: 600px;
+    background: url("../images/banner6.jpg")no-repeat top center;
+}
+.banner li.banner7 a{
+    display: block;
+    height: 600px;
+    background: url("../images/banner7.jpg")no-repeat top center;
+}
+.banner li.banner8 a{
+    display: block;
+    height: 600px;
+    background: url("../images/banner8.jpg")no-repeat top center;
+}
+.banner li.banner9 a{
+    display: block;
+    height: 600px;
+    background: url("../images/banner9.jpg")no-repeat top center;
+}
+.banner li.banner10 a{
+    display: block;
+    height: 600px;
+    background: url("../images/banner10.jpg")no-repeat top center;
+}
+.banner ol{
+    width: 370px;
+    height: 12px;
+    position: absolute;
+    bottom: 23px;
+    left: 50%;
+    margin-left: -185px;
+}
+.banner ol li{
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background: #CFCCC9;
+    float: left;
+    margin-right: 24px;
+}
+.banner ol li.last{
+    margin-right: 0;
+}
+.banner ol .active{
+    background: #8FB818;
+}
+.arrow{
+    display: none;
+}
+.arrow-l,.arrow-r{
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    font: 50px/100px "microsoft yahei";
+    line-height: 100px;
+    text-align: center;
+    background: rgba(0,0,0,.3);
+    width: 50px;
+}
+.arrow-l{
+    left: 10px;
+}
+.arrow-r{
+    right: 10px;
+}
+.banner:hover .arrow{
+    display: block;
+}
+/*banner结束*/
+/*首播开始*/
+.content-main{
+    background: #F2F2F2;
+}
+.yyt{
+    position: relative;
+    margin: 0 auto 40px;
+    padding: 10px 0;
+}
+.sbo{
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    overflow: hidden;
+}
+[class^=yyt-]{
+    background: url("../images/ico_index2.png") no-repeat;
+}
+.yyt h3{
+    width: 300px;
+    height: 45px;
+    margin-left: 36px;
+    float: left;
+}
+.yyt-title1{
+    background-position: 0 -46px;
+}
+.content-main .area{
+    float: right;
+    margin: 10px 35px 0 0;
+}
+.content-main .area a{
+    height: 20px;
+    line-height: 20px;
+    margin: 0 5px;
+    padding: 3px 8px 5px;
+    font-size: 14px;
+    color: #666;
+    display: inline-block;
+}
+.area .cur{
+    margin: 0 11px;
+    padding: 3px 2px 5px;
+    border-bottom: 2px #690 solid;
+}
+.main_box{
+    width: 1240px;
+    float: left;
+    margin-left: 45px;
+    display: none;
+
+}
+.fl-yy{
+    float: left;
+    padding: 2px;
+    position: relative;
+    display: block;
+    border: 1px #e8e8e8 solid;
+    margin: 0 0 19px 0;
+    background-color: #fff;
+    margin-right: 22px;
+}
+.fl-yy a.mvmask{
+    display: block;
+    width: 468px;
+    height: 273px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+
+}
+.fl-yy:hover,
+.fl-yy_2_1:hover{
+    box-shadow: 0 0 3px #690;;
+}
+.content-main .area .yy_first:hover{
+    color: #fff;
+    background-color: #690;
+}
+.num{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: url("../images/index_play_bg.png") repeat-x left bottom;
+    width: 100%;
+    height: 124px;
+    cursor: pointer;
+
+}
+.main_box p{
+    color:  #cf9;
+}
+.text{
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+    display: block;
+    color: #fff;
+}
+.num-title{
+    margin-top: 80px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.bf{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -40px 0 0 -30px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    cursor: pointer;
+    line-height: 1000px;
+    overflow: hidden;
+    background: url(../images/ico_play_718.png) no-repeat 0 0;
+    display: none;
+}
+
+.w .fl-yy:hover .bf,
+.fl-yy_2_1:hover .bf{
+    display: block;
+}
+.MV{
+    float: left;
+    position: relative;
+    width: 226px;
+    margin-right: 22px;
+}
+.fl-yy_2_1{
+    position: relative;
+    border: 1px #e8e8e8 solid;
+    float: left;
+    padding: 2px;
+    margin: 0 0 19px 0;
+    background-color: #fff;
+}
+
+.fl-yy-arrow{
+    width: 100%;
+    height: 124px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    background: url("../images/index_play_bg.png") repeat-x left bottom;
+}
+.mvmask2{
+    display: block;
+    width: 220px;
+    height: 124px;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+[class^=icon-]{
+    background: url("../images/ico20_1113.png") no-repeat;
+}
+.yy_down{
+    box-shadow: 0 0 2px #690;
+    border: 1px #b4c88b solid;
+    width: 224px;
+    height: 0px;
+    padding-top: 128px;
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    background-color: #F6F9F1;
+    overflow: visible;
+
+}
+
+.yy_down .yy_title{
+    padding: 3px 3px 0 6px;
+    background-color: #fff;
+    color: #996;
+    overflow: hidden
+}
+.icon-left,
+.icon-right{
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    background-position: 2px -97px;
+    float: left;
+}
+.icon-right{
+    background-position: 0px -116px;
+    float: none;
+}
+.yy_num{
+    height: 20px;
+    padding: 5px 0 5px 10px;
+    background-color: #fff;
+}
+.icon-play,
+.icon-vchar,
+.icon-comment{
+    padding-left: 18px;
+    background-position: 0 3px;
+    color: #999;
+    margin-right: 10px;
+    display: inline-block;
+}
+.icon-comment{
+    background-position: 0 -16px;
+}
+.icon-vchar{
+    padding-left: 22px;
+    margin-right: 0;
+    background-position: 0 -40px;
+}
+.icon-rise{
+    width: 9px;
+    height: 7px;
+    background-position: 0 -66px;
+    display: inline-block;
+}
+.main_box .yy_info{
+    padding: 10px;
+    line-height: 20px;
+    color: #666;
+    overflow: hidden;
+}
+.current{
+    z-index: 11;
+}
+.current:hover .yy_down{
+    display: block;
+}
+.show{
+    display: block;
+}
+/*流行开始*/
+.yyt-title2{
+    background-position: 0 -90px;
+}
+.fl-yy-1{
+    width: 716px;
+    margin-right: 22px;
+}
+.yy_description{
+    padding: 10px 15px;
+    width: 218px;
+    float: left;
+}
+.des-title{
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+.des-title:hover{
+    color: #690;
+}
+.main_box .yy_name{
+    color: #690;
+    padding: 2px 0 5px;
+    cursor: pointer;
+}
+.main_box .des_info{
+    margin-top: 5px;
+    height: 140px;
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 20px;
+    color: #666;
+}
+/*音乐榜*/
+.yyt .yyt-title3{
+    width: 180px;
+    height: 60px;
+    background-position: 0 -138px;
+}
+.yy_date{
+    position: absolute;
+    left: 174px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+}
+.yy_time{
+    height: 32px;
+    line-height: 32px;
+    border-left: 1px solid #d5d5d5;
+    margin-top: 25px;
+    padding: 0 0 0 10px;
+    color: #999;
+    display: inline-block;
+}
+.yy_time:hover{
+    color: #690;
+}
+/*自制节目*/
+.yyt-title4{
+    background-position: 0 -322px;
+}
+/*粉丝*/
+.yyt-title5{
+    background-position: 0 -506px;
+}
+/*音悦商城*/
+/*音悦stage*/
+.yyt-title6 img,
+.yyt-title7 img{
+    height: 40px;
+    width: 170px;
+}
+/*音悦人*/
+.yyt-title8{
+    background-position: 0 -276px;
+}
+/*音悦推荐*/
+.yyt-title9{
+    background-position: 0 -230px;
+}
+/*音悦资讯*/
+.yyt-title10{
+    background-position: 0 -368px;
+}
+.news-list{
+    margin: 0 -2px;
+    width: 224px;
+    padding-top: 6px;
+    height: 142px;
+    overflow: hidden;
+}
+.news-list li a{
+    width: 215px;
+    padding-left: 10px;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px #f1f1f1 solid;
+    display: block;
+
+}
+
+.news-list li a:hover{
+    color: #690;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+
+
+
+
+
+.top{
+    height: 65px;
+    width: 50px;
+    bottom: 135px;
+    background: url("../images/returntop.png") no-repeat;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    display: none;
+}

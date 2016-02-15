@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #nav {
+            width:100%;
+            background:url("nav_bg.jpg")repeat-x scroll;
+        }
+        #nav ul{
+            width:980px;
+            margin:0 auto;
+            background-color: #000000;
+            background-position:979px 0;
+        }
+        #nav li{
+            float:left;
+            width:163px;
+            height:110px;
+            background-color:#000;
+            background-position:1px 0;
+            transition: all 0.2s ease 0s;}
+        #nav li.on{
+            background-position:1px -110px;
+        }
+        #nav a{
+            float:left;
+            width:162px;
+            height:88px;
+            padding:22px 0 0 0;
+            font-size:14px;
+            font-weight:800;
+            text-align:center;
+            color:#cbcbcb;
+        }
+        #nav a:hover{
+            color:#b3dc10;
+        }
+        #nav i{
+            background:url("global.png")no-repeat scroll;
+            display:block;
+            width:39px;
+            height:39px;
+            cursor:pointer;
+            margin:0 auto 10px;
+            transition: all 0.2s ease 0s;}
+        #nav .register i{
+            background-position:0 -235px;
+        }
+        #nav .register:hover i{
+            background-position:0 -274px;
+        }
+        #nav .download i{
+            background-position:-49px -235px;
+        }
+        #nav .download:hover i{
+            background-position:-49px -274px;
+        }
+        #nav .recharge i{
+            background-position:-98px -235px;
+        }
+        #nav .recharge:hover i{
+            background-position:-98px -274px;
+        }
+        #nav .service i{
+            background-position:-147px -235px;
+        }
+        #nav .service:hover i{
+            background-position:-147px -274px;
+        }
+        #nav .security i{
+            background-position:-98px -318px;
+        }
+        #nav .security:hover i{
+            background-position:-98px -357px;
+        }
+        #nav .bbs i{
+            background-position:-147px -318px;
+        }
+        #nav .bbs:hover i{
+            background-position:-147px -357px;
+        }
+    </style>
+</head>
+<body>
+<div id="nav">
+    <ul class="clearfix">
+        <li><a class="register" href="#"><i></i>账号注册</a></li>
+        <li><a class="download" href="#" ><i></i>游戏下载</a></li>
+        <li><a class="recharge" href="#"><i></i>账号充值</a></li>
+        <li><a class="service"  href="#"><i></i>客服中心</a></li>
+        <li><a class="security" href="#"><i></i>安全中心</a></li>
+        <li><a class="bbs"href="#"><i></i>游戏社区</a></li>
+    </ul>
+</div>
+</body>
+</html>

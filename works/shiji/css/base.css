@@ -1,0 +1,227 @@
+/*页面取零*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle; }
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; }
+img {border:0;	vertical-align:middle;}
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a{color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6{text-decoration:none;font-weight:normal;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w{
+    width: 980px;margin:0 auto;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+/*头部开始*/
+.header{
+    width: 980px;
+    height: 100px;
+    background: url("../images/header_bg.jpg") no-repeat scroll 195px 35px;
+    position: relative;
+}
+.header a.logo{
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 195px;
+    height: 70px;
+}
+.login{
+    margin-top: 31px;
+}
+.login a{
+    width: 108px;
+    float: left;
+    border: 1px solid #ccc;
+    font: 14px/38px "microsoft yahei";
+    text-align: center;
+    margin-right: 10px;
+    color: #848484;
+}
+.login a:hover{
+    background-color: #B3DC10;
+}
+.login a.login_fam{
+    width: 38px;
+    height: 33px;
+    font:14px/14px "microsoft yahei";
+    padding-top: 5px;
+
+}
+/*页脚开始*/
+.footer{
+    padding: 35px 0 60px;
+}
+.footer_nav{
+    color: #959595;
+    float: left;
+    font-family: "SimSun", "宋体";
+    width: 520px;
+}
+.footer_nav ul{
+    margin: 0 0 12px;
+}
+.footer_nav ul li{
+    float: left;
+    width: 78px;
+    background: url("../images/global.jpg") no-repeat 62px -370px;
+}
+.footer_nav a{
+    color: #ccc;
+    font-family: "microsoft yahei";
+}
+.footer_nav ul li.footer_pro{
+    width: 98px;
+    background-position: 80px -370px;
+    position: relative;
+}
+.footer_nav p.address{
+    margin-top: 30px;
+    font-size: 11px;
+    font-family: "microsoft yahei";
+}
+.footer_tg{
+    width: 70px;
+}
+.footer_tg a{
+    display: block;
+    width: 68px;
+    background-position: 53px -318px;
+    color: #8b8b8b;
+}
+.footer_pro:hover .submap{
+    display: block;
+}
+.footer_pro a:hover{
+    color:#6D9AD1;
+    font-weight: bold;
+}
+.submap{
+    position: absolute;
+    left: -15px;
+    top: -120px;
+    height: 120px;
+    background: #fff;
+    width: 99px;
+    border: 1px solid #efefef;
+    display: none;
+}
+.submap p {
+    width: 80px;
+    line-height: 22px;
+}
+.submap p a{
+    width: 99px;
+    text-align: center;
+    color: #8b8b8b;
+    font-family: "SimSun", "宋体";
+}
+.submap p a:hover{
+    background-color: #6D9AD1;
+    color: #fff;
+}
+.footer_tg i{
+    position: absolute;
+    left: 54px;
+    top: 5px;
+    width: 11px;
+    height: 11px;
+    background:url("../images/global.jpg") no-repeat 0px -323px;
+}
+.footer_tg:hover i{
+    background:url("../images/global.jpg") no-repeat 0px -346px;
+}
+.footer_db a{
+    color: #8b8b8b;
+}
+.footer_db a:hover{
+    text-decoration: underline;
+}
+.copy-standard{
+    float: right;
+    background: url("../images/footer_150703.jpg") no-repeat;
+    color: #fff;
+    position: relative;
+    width: 358px;
+    height: 52px;
+}
+.copy-standard a.copy-gb{
+    height: 22px;
+    left: 32px;
+    position: absolute;
+    top: 0;
+    width: 76px;
+    padding: 25px 0 0 58px;
+    color: #001b75;
+}
+.copy-standard p{
+    left: 198px;
+    position: absolute;
+    top: -1px;
+    width: 170px;
+}
+.copy-standard p a{
+    color: #fff;
+    font-family: simhei;
+    font-size: 11px;
+    height: 14px;
+    width: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.copy-standard span{
+    font-family: "SimSun", "宋体";
+    font-size: 11px;
+    height: 14px;
+    padding: 0 0 13px;
+    width: 105px;
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+.copy-standard p a.copy_2,
+.copy-standard span.copy_s2{
+    top: 15px;
+}
+.copy-standard p a.copy_3,
+.copy-standard span.copy_s3{
+    top: 30px;
+}

@@ -1,0 +1,291 @@
+@charset "utf-8";
+html, body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, object, code, legend, button, input, textarea, label, th, td, a, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+body {
+    font: 12px/1.5 Tahoma,'\5FAE\8F6F\96C5\9ED1','Microsoft Yahei',"hiragino sans gb", Helvetica, Arial, "\5b8b\4f53", 'sans-serif';
+    color: #333;
+    padding-top: 41px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+img{
+    width: 100%;
+}
+:focus {
+    outline: 0;
+}
+ul, ol {
+    list-style: none;
+}
+fieldset, img {
+    border: 0 none;
+}
+address, caption, cite, code, dfn, em, i, th, var, optgroup {
+    font-style: normal;
+    font-weight: normal;
+}
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+code, kbd, samp, tt {
+    font-size: 100%;
+}
+input, button, textarea, select {
+    *font-size: 100%;
+    outline: none;
+}
+textarea {
+    resize: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a.special, .special a {
+    color: #690;
+}
+a.special:hover, .special a:hover {
+    color: #390;
+    text-decoration: none;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+.overflow {
+    overflow: hidden;
+    *zoom: 1;
+}
+
+/*头部开始*/
+.header{
+    height:41px;
+    background: #1C1C1C;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.w{
+    width: 1307px;
+    height: 41px;
+    margin: 0 auto;
+
+
+}
+.logo{
+    float: left;
+}
+.logo a{
+    display: block;
+    width: 88px;
+    height: 36px;
+    padding-top: 5px;
+}
+.nav{
+    margin-left: 23px;
+    float: left;
+    height: 41px;
+}
+.nav ul li {
+    float: left;
+    position: relative;
+
+}
+.nav .down b{
+    width: 7px;
+    height: 4px;
+    background: url("../images/topbar_sprite2.png")no-repeat -223px -18px;
+    float: right;
+    margin: 19px 0 0 3px;
+}
+.nav .down .up{
+    position: absolute;
+    height: 33px;
+    width: 60px;
+    left: 0;
+    top: 41px;
+    display: none;
+}
+.nav .down .up a{
+    display: block;
+    height: 33px;
+    width: 60px;
+    line-height: 33px;
+    text-align: left;
+}
+.nav .down:hover .up{
+    display: block;
+}
+.nav .up li a.xiala:hover{
+    background: #5A840A;
+}
+.nav .up li{
+    background: #000;
+}
+.nav li a{
+    display: block;
+    padding: 0 12px 0 13px;
+    color: #CCCCCC;
+    line-height: 41px;
+}
+.nav li a:hover{
+    background: #000000;
+}
+.nav li a.nav_first{
+    color:#CCFF99;
+}
+.nav li .new{
+    position: absolute;
+    width: 24px;
+    height: 17px;
+    background: url("../images/topbar-new.png") no-repeat right top;
+    top: 3px;
+    left: 27px;
+}
+.search{
+    float: left;
+    width: 223px;
+    margin-top: 2px;
+    margin-left: 60px;
+    position: relative;
+    background: #000;
+}
+.search input{
+    width: 199px;
+    height: 29px;
+    border-radius: 20px;
+    margin: 5px 4px;
+    padding-left: 16px;
+    color: #B1B1C6;
+}
+.search button{
+    background: url("../images/topbar_sprite2.png") no-repeat -223px 0;
+    width: 16px;
+    height: 18px;
+    text-indent: -999em;
+    float: right;
+    position: absolute;
+    right: 17px;
+    top: 11px;
+    cursor: pointer;
+}
+.search:hover .hot{
+    display: block;
+}
+.hot{
+    width: 223px;
+    height: 304px;
+    background: #000;
+    display: none;
+}
+.hot li{
+    width: 198px;
+    font: 12px/30px "微软雅黑";
+}
+.hot li a{
+    color: #C0CCCC;
+    display: block;
+    width: 198px;
+    height: 30px;
+    padding-left: 25px;
+}
+.hot li a:hover{
+    background: #4D4D4D;
+}
+.login{
+    float: right;
+}
+.login a{
+    color: #CCCCCC;
+    font: 12px/41px "微软雅黑";
+}
+.login span{
+    padding: 0 15px;
+    color: #666666;
+}
+/*导航条结束*/
+.footer{
+    text-align: center;
+}
+.footer p{
+    line-height: 22px;
+    color: #999;
+}
+.footer p a{
+    color: #999;
+}
+.footer p.lx a{
+    font: 14px/14px "宋体";
+    color: #66667D;
+}
+.footer p.lx{
+
+    margin: 39px 0 25px 0;
+}
+span.line{
+    display: inline-block;
+    background: url("../images/ico_index.png") no-repeat -70px 0;
+    width: 2px;
+    height: 10px;margin: 0 8px;
+    overflow: hidden;
+}
+.footer .copyright a{
+    width: 35px;
+    height: 43px;
+    display: inline-block;
+    margin-top: -25px;
+}
+/*页脚结束*/
+
+
+
+
+
+
+
+
+
+

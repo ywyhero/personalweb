@@ -1,0 +1,355 @@
+/*热点新闻开始*/
+.hotnews{
+    width: 1000px;
+    height: 30px;
+    margin: 20px auto;
+    background:url(../images/icon.png) no-repeat 0 0;
+}
+.hotnews a{
+    float: right;
+    color: #d82b27;
+    margin: 9px 5px 0 0;
+    font-size: 16px;
+}
+.main{
+    width: 1000px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: #000;
+    overflow: hidden;
+}
+.main a{
+    float: left;
+}
+.main a img{
+    opacity: 0.2;
+}
+/*热点新闻结束*/
+/*banner开始*/
+.banner{
+    width: 100%;
+    height: 699px;
+
+    position: relative;
+}
+.slide1{
+    width: 100%;
+    height: 699px;
+    background:url("../images/banner1.jpg") no-repeat top left;
+
+}
+.banner a{
+    position: absolute;
+    bottom: 30px;
+    left: 170px;
+    overflow: hidden;
+}
+.slide2{
+    width: 100%;
+    height: 699px;
+    background:url("../images/banner2.jpg") no-repeat top left;
+    display: none;
+}
+.slide3{
+    width: 100%;
+    height: 699px;
+    background:url("../images/banner3.jpg") no-repeat top left;
+    display: none;
+}
+.item{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    height: 20px;
+}
+.item li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.item li.active{
+    background-color: #f60;
+}
+/*banner结束*/
+/*游戏开始*/
+.gnav{
+    width: 901px;
+    height: 115px;
+    margin: 9px auto;
+    position: relative;
+}
+.gnav a{
+    float: left;
+    width: 341px;
+    height: 115px;
+    opacity: 0.8;
+}
+.gnav a.web{
+    position: absolute;
+    left: 280px;
+}
+.gnav a.moblie{
+    position: absolute;
+    left: 561px;
+}
+.game{
+    width: 1230px;
+    height: 749px;
+    display: none;
+    margin: 0 auto;
+    border-bottom:5px solid #752627;
+}
+.pcgame{
+    display: block;
+    position: relative;
+}
+.mobgame{
+    position: relative;
+}
+.mob_icon{
+    position: absolute;
+
+}
+.mob_icon{
+    margin-top: 400px;
+}
+.mob_icon li {
+    height: 135px;
+    float: left;
+    margin-left: 10px;
+}
+.mob_icon li a{
+    display: inline-block;
+    width: 100px;
+    height: 136px;
+}
+.mob_icon1 a{
+    background: url("../images/g4.png") no-repeat;
+}
+.mob_icon2 a{
+    background: url("../images/g8.png") no-repeat;
+}
+.mob_icon3 a{
+    background: url("../images/g10.png") no-repeat;
+}
+.mob_icon li span{
+    display: block;
+    color: #fff;
+    margin-top: 128px;
+    text-align: center;
+}
+
+.mob_name{
+    position: relative;
+}
+.mob_name h3{
+    padding-bottom: 118px;
+    border-bottom: 1px dashed #aaa;
+    position: absolute;
+    top:195px;
+    left: 10px;
+    color: #fff;
+    display: none;
+    font:700 18px/18px "microsoft yahei";
+    width: 440px;
+}
+.mob_name h3 p{
+    color:#AF4644 ;
+    font-size: 14px;
+    padding-top: 27px;
+}
+.mob_game{
+    float: right;
+}
+.mob_game li{
+   display: none;
+
+}
+.mob_game li.selected,.mob_name h3.selected{
+    display: block;
+}
+.web_tab{
+    position: relative;
+}
+.web_game{
+    width: 430px;
+    margin-left: 10px;
+    height: 170px;
+    padding-top: 220px;
+    position: absolute;
+    left: 0;
+}
+.web_game h3{
+    color: #fff;
+    font: 700 18px/18px "microsoft yahei";
+}
+.web_game p{
+    font-size: 14px;;
+    color: rgb(175,70,68);
+    width: 350px;
+    line-height: 20px;
+    height: 112px;
+    margin-top: 20px;
+
+}
+.web_SD{
+    width: 440px;
+    padding-top: 30px;
+    padding-left: 10px;
+    border-top: 1px dashed #aaa;
+    position: absolute;
+    top: 398px;
+    left: 10px;
+}
+.web_SD li{
+    width: 100%;
+    height: 136px;
+}
+.web_SD li a{
+    width: 100px;
+    height: 136px;
+    background: url("../images/g6.png") no-repeat;
+    display: inline-block;
+}
+.web_SD span{
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+    color: #fff;
+}
+.web_GD{
+    float: right;
+}
+.pc_tab{
+    width: 440px;
+    padding-top: 30px;
+    margin-left: 10px;
+    border-top:1px dashed #aaa;
+    position: absolute;
+    top: 300px;
+}
+.pc_tab ul{
+    position: relative;
+}
+.pc_tab ul li{
+    float: left;
+    width: 100px;
+    height: 136px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+}
+.pc_tab ul li a{
+    width: 100px;
+    height: 136px;
+    display: inline-block;
+}
+.pc_tab ul li.pc_icon1 a{
+    background: url("../images/g5.png") no-repeat;
+}
+.pc_tab ul li.pc_icon2 a{
+    background: url("../images/g1.png") no-repeat;
+}
+.pc_tab ul li.pc_icon3 a{
+    background: url("../images/g3.png") no-repeat;
+}
+.pc_tab ul li.pc_icon4 a{
+    background: url("../images/g2.png") no-repeat;
+}
+.pc_tab ul li.pc_icon5 a{
+    background: url("../images/g7.png") no-repeat;
+}
+.pc_tab ul li.pc_icon6 a{
+    background: url("../images/g12.png") no-repeat;
+}
+.pc_tab ul li.pc_icon7 a{
+    background: url("../images/g11.png") no-repeat;
+}
+.pc_tab ul li.pc_icon8 a{
+    background: url("../images/g9.png") no-repeat;
+}
+.pc_tab ul li span{
+    display: block;
+    margin-top: 124px;
+    margin-left: 8px;
+    color: #fff;
+    text-align: center;
+}
+.pc_main{
+    width: 1230px;
+    height: 749px;
+    overflow: hidden;
+}
+.pc_bg1 {
+    width: 100%;
+    height: 749px;
+    background: url("../images/b1.png") no-repeat right top;
+    display: block;
+}
+
+.pc_bg2 {
+    width: 100%;
+    height: 749px;
+    background: url("../images/j2.png") no-repeat right top;
+    display: block;
+}
+.pc_bg3 {
+    width: 100%;
+    height: 749px;
+    background: url("../images/j3.png") no-repeat right top;
+    display: block;
+}
+.pc_bg4 {
+    width: 100%;
+    height: 749px;
+    background: url("../images/j4.png") no-repeat right top;
+    display: block;
+}
+.pc_bg5 {
+    width: 100%;
+    height: 749px;
+    background: url("../images/j5.png") no-repeat right top;
+    display: block;
+}
+.pc_bg6 {
+    width: 100%;
+    height: 749px;
+    background: url("../images/j6.png") no-repeat right top;
+    display: block;
+}
+.pc_bg7 {
+    width: 100%;
+    height: 749px;
+    background: url("../images/j7.png") no-repeat right top;
+    display: block;
+}
+.pc_bg8 {
+    width: 100%;
+    height: 749px;
+    background: url("../images/j8.png") no-repeat right top;
+    display: block;
+}
+.pc_main .pc_bg h3,
+.pc_main .pc_bg p{
+
+    margin-left: 10px;
+}
+.pc_main .pc_bg h3{
+    color: #fff;
+    font: 700 18px/18px "microsoft yahei";
+    padding-top: 140px;
+}
+.pc_main .pc_bg p{
+    font-size: 14px;;
+    color: rgb(175,70,68);
+    width: 350px;
+    line-height: 20px;
+    height: 112px;
+    margin-top: 20px;
+
+}

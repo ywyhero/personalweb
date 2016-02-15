@@ -1,0 +1,68 @@
+/*页面取零*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle; }
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; }
+img {border:0;	vertical-align:middle;}
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a{ text-decoration:none; }
+h1,h2,h3,h4,h5,h6{text-decoration:none;font-weight:normal;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-black{color: #111!important;}
+
+
+
+body{
+    background: url(../images/5.jpg) no-repeat center center;
+}
+
+.amortize{
+    width: 350px;
+    height: 40px;
+    margin:560px 524px 0;
+    position: relative;
+}
+.dh{
+    width: 450px;
+    height: 20px;
+    background-color: #333333;
+    border-radius: 10px;
+    position: absolute;
+    top: -25px;
+    left: -68px;
+    background-image: linear-gradient(135deg,#f0f0f0 25%,transparent 25%,transparent 50%,#f0f0f0 50%,#f0f0f0 75%,transparent 75%,transparent 100%);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+    animation: move 3s infinite linear;
+}
+.amortize span{
+    position: absolute;
+    left: 130px;
+    top: 25px;
+    color: #f0f0f0;
+    font:600 16px/16px "microsoft yahei";
+}
+@keyframes move {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 40px 40px;
+    }
+}

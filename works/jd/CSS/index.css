@@ -1,0 +1,695 @@
+@charset "UTF-8";
+.dbanner{
+    position: relative;
+}
+.dbanner a{
+    position: absolute;
+    height: 604px;
+    background: url("../images/banner.jpg") no-repeat top center;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/*大背景结束*/
+.main{
+    position: relative;
+}
+.slider{
+    height: 453px;
+    width: 730px;
+    float: left;
+    margin: 12px 0 0 220px;
+    position: relative;
+
+}
+.slider ul li.jd_xs{
+    display: block;
+}
+.slider ol{
+    position: absolute;
+    left: 50%;
+    margin-left: -66px;
+    bottom: 8px;
+}
+.slider ol li {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background: #3E3E3E;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    float: left;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.slider .current{
+    background: #B61B1F;
+}
+.slider ul li{
+    width: 730px;
+    height: 454px;
+    display: none;
+}
+.slider li img{
+    width: 730px;
+    height: 454px;
+}
+.arrow{
+    display: none;
+}
+.arrow-l, .arrow-r{
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    background: rgba(0,0,0,.2);
+    width: 28px;
+    height: 62px;
+    text-align: center;
+    line-height: 62px;
+    font: 18px/62px "microsoft yahei";
+    color: #fff;
+}
+.arrow-l{
+    left: 0;
+}
+.arrow-r{
+    right: 0;
+}
+.arrow-l:hover,.arrow-r:hover{
+    color: #fff;
+}
+.jd-news{
+    height: 200px;
+    border-bottom: 1px dashed #E4E4E4;
+}
+.jd-news .dt,.lifeserv .dt{
+    height: 43px;
+    border-bottom: 1px dotted #E8E8E7;
+}
+.jd-news .dt h3,.lifeserv .dt h3{
+    font: 14px/43px "microsoft yahei";
+    float: left;
+    padding-left: 15px;
+}
+.jd-news .dt a{
+    float: right;
+    font: 12px/43px "宋体";
+    margin-right: 15px;
+}
+.jd-news .dd ul{
+    margin-top: 8px;
+}
+.jd-news .dd li{
+    height: 28px;
+    padding-left: 12px;
+    line-height: 28px;
+}
+.jd-news .dd li a{
+    font: 12px/28px "宋体";
+}
+.jd-news li span{
+    font-weight: 700;
+    padding-right: 5px;
+}
+.lifeserv{
+    overflow: hidden;
+    width: 248px;
+    height: 251px;
+}
+.lifeserv ul{
+    width: 252px;
+}
+.lifeserv ul li{
+    border: 1px solid #E4E4E4;
+    width: 62px;
+    height: 70px;
+    float: left;
+    margin-left: -1px;
+    border-top: 0;
+}
+.lifeserv .dd ul li a{
+    display: block;
+    height: 70px;
+    text-align: center;
+    padding-top: 44px;
+    position: relative;
+    color: #666666;
+}
+.dd ul li i{
+    position: absolute;
+    left: 18px;
+    top: 12px;
+   /* background: url("../images/serv.png") no-repeat right top;*/
+    width: 25px;
+    height: 25px;
+}
+.dd ul li.song{
+    background: url("../images/song.png") no-repeat top right;
+}
+.dd ul li.mian{
+    background: url("../images/mian.png") no-repeat 47px 0px;
+}
+/*.dd ul li i.pic2{
+    background-position: right -25px;
+}
+.dd ul li i.pic3{
+    background-position: right -50px;
+}
+.dd ul li i.pic4{
+    background-position: right -75px;
+}
+.dd ul li i.pic5{
+    background-position: right -100px;
+}
+.dd ul li i.pic6{
+    background-position: right -125px;
+}
+.dd ul li i.pic7{
+    background-position: right -150px;
+}
+.dd ul li i.pic8{
+    background-position: right -175px;
+}
+.dd ul li i.pic9{
+    background-position: right -200px;
+}
+.dd ul li i.pic10{
+    background-position: right -225px;
+}
+.dd ul li i.pic11{
+    background-position: right -250px;
+}
+.dd ul li i.pic12{
+    background-position: right -275px;
+}*/
+.slider:hover .arrow{
+    display: block;
+}
+.news{
+    float: right;
+    height: 451px;
+    width: 248px;
+    border: 1px solid #E4E4E4;
+    margin-top: 12px;
+    margin-right: 1px;
+}
+.db11hd{
+    position: relative;
+}
+.night{
+    height: 150px;
+    margin-top: 10px;
+    float: left;
+}
+.db11hd-banner{
+    width: 1000px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.db11hd-banner ul{
+    width: 500%;
+}
+.db11hd-banner ul li{
+    height: 164px;
+    float: left;
+    margin-left: 1px;
+}
+.dp{
+    margin-top: 33px;
+
+}
+.dp-pic{
+    float: left;
+}
+.dp-gs{
+    float: left;
+    width: 1000px;
+}
+
+.dp-gs ul li{
+    float: left;
+    width: 99px;
+    height: 89px;
+    border: 1px solid #DCDCDC;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    position: relative;
+}
+.dp-gs li:hover {
+    border: 1px solid #C81623;
+    z-index: 1;
+}
+.mj{
+    height: 59px;
+    margin-top: 40px;
+    border: 2px solid #E12013;
+}
+.mj img{
+    height: 59px;
+    width: 1206px;
+}
+.db11_yh{
+    height: 342px;
+    float: left;
+    overflow: hidden;
+}
+.db11_yh .db11_yh_l{
+    float: left;
+    width: 990px;
+    height: 342px;
+}
+.db11_yh-1{
+    width: 395px;
+    height: 341px;
+    border: 1px solid #E5E5E5;
+    float: left;
+    margin-top: -1px;
+}
+.db11_yh-1 a{
+    width: 395px;
+    height: 341px;
+    position: relative;
+    float: left;
+}
+.db11_yh-1 h4{
+    font: 24px/24px "microsoft yahei";
+    position: absolute;
+    color: #c81623;
+    top: 30px;
+    left: 20px;
+}
+.db11_yh p.dtu{
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    font: 14px/14px "微软雅黑";
+    color: #999;
+}
+.db11_yh p{
+    position: absolute;
+    left: 20px;
+    top: 51px;
+    font: 14px/14px "微软雅黑";
+    color: #999;
+}
+.db11_yh-2 a,.db11_yh-3 a{
+    width: 372px;
+    height: 170px;
+    position: relative;
+    float: left;
+    border: 1px solid #E5E5E5;
+    margin: -1px 0 -1px -1px;
+}
+.db11_yh-3{
+    border-bottom: 1px solid #E5E5E5;
+}
+.db11_yh h5 {
+    font: 16px/16px "microsoft yahei";
+    position: absolute;
+    color: #c81623;
+    top: 30px;
+    left: 20px;
+}
+.db11_yh-4 a{
+    width: 219px;
+    height: 170px;
+    float: left;
+    position: relative;
+    border: 1px solid #E5E5E5;
+    margin: -171px 0 -1px -1px;
+}
+.db11_yh-5 a,.db11_yh_r-1 a,.db11_yh_r-2 a{
+    width: 219px;
+    height: 170px;
+    float: left;
+    position: relative;
+    border: 1px solid #E5E5E5;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.db11_banner{
+    margin-top: 20px;
+    height: 125px;
+
+}
+.db11_banner a{
+    display: block;
+    float: left;
+}
+.clothes{
+    margin-top: 30px;
+}
+.mt{
+    border-bottom: 1px solid #c81623;
+    overflow: visible;
+    position: relative;
+    height: 36px;
+
+}
+
+.mt h2{
+    float: left;
+    font: 400 20px/36px "microsoft yahei";
+    position: relative;
+    color: #333;
+}
+.mt h2 i{
+    background: url("../images/sprite_floor.png") no-repeat 0 0;
+    width: 31px;
+    height: 25px;
+    position: absolute;
+    top: 2px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 25px;
+    padding-left: 3px;
+}
+.mt h2 span{
+    padding-left: 40px;
+}
+.mt ul{
+    margin-top: 1px;
+    float: right;
+    display: inline;
+    border: 1px solid #ededed;
+    border-bottom: 0;
+    height: 34px;
+    line-height: 34px;
+    z-index: 1;
+
+}
+.mt ul li{
+    float: left;
+    width: 58px;
+    display: inline;
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+    z-index: 2;
+}
+.mt ul li a{
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    display: block;
+    padding: 0 16px;
+    font: 12px/34px "宋体";
+    color: #666;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+
+.mt ul li span{
+    position: absolute;
+    width: 1px;
+    background: #CCCCCC;
+    height: 14px;
+    top: 10px;
+    right: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.mc{
+    height: 632px;
+    width: 100%;
+    display: none;
+}
+#jd_clothes li.active{
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    margin-left: -1px;
+
+}
+#clothes div.show{
+    display: block;
+}
+
+.clothes .mc_slider{
+    width: 330px;
+    float: left;
+    height: 474px;
+    position: relative;;
+}
+
+.mc_slider ul{
+    position: absolute;
+    top: 230px;
+    left: 0;
+    height: 92px;
+
+}
+.mc_slider ul li{
+    width: 80px;
+    float: left;
+    padding: 10px 0px;
+    height:26px;
+    padding-left: 25px;
+
+}
+.mc_slider ul li a{
+    color: #666;
+}
+.mc_slider ul li a:hover{
+    color: #C81623;
+}
+.mc_slider ul li span{
+    font-size: 14px;
+    margin-right: 5px;
+    float: left;
+    height: 26px;
+    overflow: hidden;
+    line-height: 26px;
+}
+.mc_slider  i.clothes_1{
+    width: 26px;
+    height: 26px;
+    float: left;
+    overflow: hidden;
+    line-height: 26px;
+    margin-right: 5px;
+}
+.mc_slider li.fore1 .clothes_1{
+    background: url("../images/clothesicon.png") no-repeat 0 0;
+}
+.mc_slider li.fore2 .clothes_1{
+    background: url("../images/clothesicon.png") no-repeat 0 -26px;
+}
+.mc_slider li.fore3 .clothes_1{
+    background: url("../images/clothesicon.png") no-repeat 0 -52px;
+}
+.mc_slider li.fore4 .clothes_1{
+    background: url("../images/clothesicon.png") no-repeat 0 -78px;
+}
+.mc_slider li.fore5 .clothes_1{
+    background: url("../images/clothesicon.png") no-repeat 0 -130px;
+}
+.mc_slider li.fore6 .clothes_1{
+    background: url("../images/clothesicon.png") no-repeat 0 0;
+}
+.mc_slider ul.detail{
+    height: 144px;
+    width: 330px;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    background: rgba(255,255,255,.7);
+    top: -143px;
+}
+.mc_slider .detail li{
+    height: 96px;
+    float: left;
+    width: 120px;
+    padding: 7px 20px 0 25px;
+    padding-top: 20px;
+}
+.mc_slider .detail li a{
+    padding-right: 10px;
+    color: #999;
+    line-height: 28px;
+}
+.side-down{
+   border: 1px solid #ededed;
+    width: 328px;
+    height: 156px;
+    position: absolute;
+    top: 473px;
+}
+
+.mc_main{
+    float: left;
+    width: 659px;
+    border-right: 1px solid #ccc;
+    height: 631px;
+}
+
+.main_body li{
+    float: left;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+.main_body li.fore1,.main_body li.fore3{
+    width: 439px;
+    height: 157px;
+}
+.main_body li.fore2{
+    width: 439px;
+    height: 315px;
+}
+.main_body li.fore4,.main_body li.fore5,.main_body li.fore6,.main_body li.fore7{
+
+    width: 218px;
+    height: 157px;
+}
+.main_body li.fore4{
+    margin-top: -475px;
+}
+.main_body li.fore5{
+    margin-top: -317px;
+}
+.main_body li.fore6{
+    margin-top: -159px;
+}
+.main_extra li{
+    float: right;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+.main_extra li.extra3{
+    height: 315px;
+    overflow: hidden;
+
+}
+.mc_bott{
+    margin-top: 10px;
+    height: 66px;
+    background: #F7F7F7;
+}
+.mc_bott ul{
+    padding-top: 13px;
+}
+.mc_bott li{
+    float: left;
+    width: 120px;
+    height: 40px;
+    border-left: 1px dotted #ccc;
+    text-align: center;
+}
+.mc_bott li.one{
+    border-left: 0;
+}
+.floor{
+    height: 319px;
+    margin: 55px 0 19px;
+}
+.special{
+    width: 904px;
+    height: 319px;
+    float: left;
+}
+.special_mc{
+    float: left;
+    height: 42px;
+}
+.floor h2{
+    line-height: 42px;
+    font-size: 20px;
+    font-family: microsoft yahei;
+}
+.ttdj{
+    float: left;
+    width: 239px;
+    height: 284px;
+    border: 1px solid #ccc;
+}
+.ttdj a{
+    display: block;
+}
+.ttdj a.pic{
+    margin-top: 18px;
+    margin-left: 29px;
+}
+.special a.wz{
+    margin-top: 33px;
+    font: 12px/12px "宋体";
+    margin-left: 29px;
+    margin-bottom: 11px;
+}
+.special span{
+    font: 700 16px/16px "宋体";
+    margin-left: 29px;
+    color: #E12228;
+}
+.special_mc{
+    float: left;
+}
+.speacial_mc li.mc_fore{
+    float: left;
+    width: 220px;
+    height: 141px;
+    border: 1px solid #ccc;
+    margin: 0 0 -1px -1px;
+}
+.speacial_mc li.mc_fore a.pic1{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.speacial_mc li.mc_fore a.js
+{
+    font: 12px/12px "微软雅黑";
+    display: block;
+    width: 94px;
+    float: right;
+    margin-top: -90px;
+    margin-right: 5px;
+}
+.speacial_mc li.mc_fore span{
+    float: right;
+    margin-right:35px;
+    margin-top: -50px;
+}
+.rmsd{
+    float:left;
+}
+.rmsd_datail
+{
+    width: 305px;
+    height: 283px;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+.rmsd .rmsd_datail ul li{
+    width: 305px;
+    height: 141px;
+    position: relative;
+}
+.rmsd .rmsd_datail ul li a{
+    display: block;
+    width: 305px;
+    height: 141px;
+    margin: 10px 0 0 10px;
+}
+.rmsd .rmsd_datail ul li a.pj{
+    display: block;
+    float: right;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40px;
+    right: 95px;
+}
+
+.rmsd .rmsd_datail ul li span{
+    margin-right: 100px;
+    margin-top:-125px;
+    float: right;
+}

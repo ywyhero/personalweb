@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>博雅互动</title>
+<link type="text/css" rel="stylesheet" href="index1.css" />
+</head>
+<script type="text/javascript">
+	function getStyle(obj,name)
+	{
+		if(obj.currentStyle)
+		{
+			return currentStyle[name];
+		}
+		else
+		{
+			return getComputedStyle(obj,false)[name];
+		}
+	}
+	function startMove(obj,json,fnEnd)
+	{
+		clearInterval(obj.timer);
+		obj.timer=setInterval(function()
+		{
+			var bStop=true;
+			for(var attr in json)
+			{
+				var cur =0 ;
+				if(attr=='opacity')
+				{
+					cur=Math.round(parseFloat(getStyle(obj,attr))*100);
+				}
+				else
+				{
+					cur=parseInt(getStyle(obj,attr));
+				}
+				var speed=(json[attr]-cur)/6;
+				speed=speed>0?Math.ceil(speed):Math.floor(speed);
+				if(json[attr]!=cur)
+				bStop=false;
+				if(attr=='opacity')
+				{
+					obj.style.filter='alpha(opacity:'+(cur+speed)+')';
+					obj.style.opacity=(cur+speed)/100;
+				}
+				else
+				{
+					obj.style[attr]=cur+speed+'px';
+				}
+			}	
+		if(bStop)
+			{
+				clearInterval(obj.timer);
+				if(fnEnd)fnEnd();
+			}
+		},30);
+	}
+	window.onload=function()
+	{
+		 var oDiv=document.getElementById('banner');
+		 var aBtn=document.getElementById('banner').getElementsByTagName('ol')[0].getElementsByTagName('li');
+		 var oUl=oDiv.getElementsByTagName('ul')[0];
+		 var aLi=oUl.getElementsByTagName('li');
+		 var now=0;
+
+		 for(var i=0;i<aBtn.length;i++)
+		 {
+		 	aBtn[i].index=i;
+		 	aBtn[i].onclick=function()
+		 	{
+		 		now=this.index;
+		 		tab();
+		 	}
+		 }
+		 function tab()
+		 {
+		 	for(var i=0;i<aBtn.length;i++)
+		 		{
+		 			aBtn[i].className='';
+		 			aLi[i].style.display='none';
+		 		}
+		 		aBtn[now].className='active';
+		 		aLi[now].style.display='block';
+		 }
+		 var timer=null;
+		 function next()
+		 	{
+		 		now++;
+		 		if(now==aBtn.length)
+		 		{
+		 			now=0;
+		 		}
+		 		tab();
+		 	}
+		 	timer=setInterval(next,2000);
+		 oDiv.onmouseover=function()
+		 {
+		 	clearInterval(timer);
+		 }
+		 oDiv.onmouseout=function()
+		 {
+		 	timer=setInterval(next,2000);
+		 }
+		 var oPr=document.getElementById('pro');
+		var oUl1=document.getElementById('pro').getElementsByTagName('ul');
+		var aBtn1=document.getElementById('pro').getElementsByTagName('ol')[0].getElementsByTagName('li');
+		var now1=0;
+		for(var l=0;l<aBtn1.length;l++)
+		{
+			aBtn1[l].index1=l;
+			aBtn1[l].onclick=function()
+			{
+				now1=this.index1;
+				tab1();
+			}
+
+		}
+		function tab1(){
+			for(var l=0;l<aBtn1.length;l++)
+				{
+					
+					aBtn1[l].className='';
+					oUl1[l].style.display='none';
+				}
+				aBtn1[now1].className='active';
+				oUl1[now1].style.display='block';
+		}
+		function next1()
+		{
+			now1++;
+			if(now1==aBtn1.length)
+			{
+				now1=0;
+			}
+			tab1();
+		}
+		var timer1=null;
+		timer1=setInterval(next1,5000);
+		oPr.onmouseover=function()
+		{
+			clearInterval(timer1);
+		}
+		oPr.onmouseout=function()
+		{
+			timer1=setInterval(next1,5000);
+		}
+	}
+</script>
+<body>
+	<div class="header">
+		<div class="inner_c">
+			<div class="logo">
+				<a href="#">博雅互动</a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#" class="first">首页</a></li>
+					<li><a href="#">博雅游戏</a></li>
+					<li><a href="#">博雅新闻</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">客服中心</a></li>
+					<li class="last"><a href="#">投资者关系</a></li>
+				</ul>
+			</div>
+			<div class="jrwm">
+				<a href="#">加入我们</a>
+			</div>
+		</div>
+	</div>
+	<div class="cl"></div>
+	<div id="banner" class="banner">
+			<ol>
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+
+			<ul>
+			<li class="b1">
+				<a href=""></a>
+
+			</li>
+			<li class="b2">
+				
+
+			</li>
+			<li class="b3">
+				
+
+			</li>
+			<li class="b4">
+				
+
+			</li>
+			<li class="b5">
+				<a href=""></a>
+
+			</li>
+		</ul>
+			
+	
+</div>
+	<div class="cl"></div>
+	<div class="content inner_c" id="content">
+		<div class="product" id="pro">
+			<ol>
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li class="last"></li>
+			</ol>
+			<ul class="pro1">
+				<li>
+					<a href="">
+						<img src="images/pro1.jpg"/>
+						<h3>BPT宣传片</h3>
+					    <p>点击播放</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/pro2.jpg"/>
+						<h3>博雅互动宣传视频</h3>
+						<p>点击播放</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/pro3.jpg"/>
+						<h3>斗地主</h3>
+						<p>点击播放</p>
+				</a>
+				</li>
+				<li class="last">
+					<a href="">
+						<img src="images/pro4.jpg"/>
+						<h3>德州扑克</h3>
+						<p>点击播放</p>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="">
+						<img src="images/pro5.jpg"/>
+						<h3>虫虫特工队</h3>
+					    <p>点击播放</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/pro6.jpg"/>
+						<h3>二人麻将</h3>
+						<p>点击播放</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/pro7.jpg"/>
+						<h3>四川棋牌</h3>
+						<p>点击播放</p>
+				</a>
+				</li>
+				<li class="last">
+					<a href="">
+						<img src="images/pro8.jpg"/>
+						<h3>四川麻将</h3>
+						<p>点击播放</p>
+					</a>
+				</li>
+			</ul>			
+			<ul>
+				<li>
+					<a href="">
+						<img src="images/pro9.jpg"/>
+						<h3>疯狂的牛仔</h3>
+					    <p>点击播放</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/pro10.jpg"/>
+						<h3>我爱斗地主[真人自拍]</h3>
+						<p>点击播放</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/pro11.jpg"/>
+						<h3>锄大地</h3>
+						<p>点击播放</p>
+				</a>
+				</li>
+				<li class="last">
+					<a href="">
+						<img src="images/pro12.jpg"/>
+						<h3>四人斗地主</h3>
+						<p>点击播放</p>
+					</a>
+				</li>
+			</ul>			
+			<ul>
+				<li>
+					<a href="">
+						<img src="images/pro13.jpg"/>
+						<h3>博雅台球</h3>
+					    <p>点击播放</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/pro2.jpg"/>
+						<h3>二人麻将</h3>
+						<p>点击播放</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/pro6.jpg"/>
+						<h3>博雅互动宣传视频</h3>
+						<p>点击播放</p>
+				</a>
+				</li>
+				<li class="last">
+					<a href="">
+						<img src="images/pro7.jpg"/>
+						<h3>四川棋牌</h3>
+						<p>点击播放</p>
+					</a>
+				</li>
+			</ul>						
+		</div>
+		<div class="main">
+			<div class="news">
+				<a href="#" class="more">MORE</a>
+				<ul>
+						<li>
+							<span>09 / 28</span>
+							<a href="#">	
+								2015博雅国际博客大赛（BPT）在澳门落幕
+							</a>
+						</li>
+						<li>
+							<span>08 / 26</span>
+							<a href="#">	
+								2015 BPT博雅国际扑克大赛重磅来袭
+							</a>
+						</li>
+						<li>
+							<span>08 / 01</span>
+							<a href="#">	
+								博雅互动与阿里游戏联手启动“淘宝杯首届电视棋牌大赛”
+							</a>
+						</li>
+						<li>
+							<span>07 / 21</span>
+							<a href="#">	
+								湖南省省长杜家毫一行参观博雅互动
+							</a>
+						</li>
+					</ul>
+
+			</div>
+			<div class="jobs">
+				<a href="#" class="more">MORE</a>
+				<div class="title">
+					<h2>专场招聘</h2>
+					<h4>BOYAA JOBS</h4>
+				</div>
+
+				<h3>专场招聘岗位：</h3>
+
+					<ul>
+						<li class="first"><a href="#">PHP开发工程师</a></li>
+						<li><a href="#">C++开发工程师</a></li>
+						<li><a href="#">WEB前端开发工程师</a></li>
+						<li><a href="#">大数据开发工程师</a></li>
+					</ul>
+
+			</div>
+		</div>
+	</div>
+	<div class="cl"></div>
+	<div class="footer">
+		<div class="inner_c">
+
+			<span class="left">
+				<a href="#">网站地图</a>
+				|
+				<a href="#">免责声明</a>
+			</span>
+			<span class="right">
+				Copyright &copy; 2004 - 2014 博雅互动(Boyaa Interactive)
+				<a href="#" target="_blank">粤ICP备05062536号</a>
+				增值电信业务经营许可证：粤B2-20110513
+				<img src="images/foot.gif"/>
+			</span>
+
+		</div>
+		
+
+	</div>
+	
+</body>
+</html>

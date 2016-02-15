@@ -1,0 +1,322 @@
+.banner{
+    height: 430px;
+    position: relative;
+}
+.banner li{
+    height: 430px;
+    width: 100%;
+    display: none;
+}
+.banner li.banner1{
+    display: block;
+}
+.banner a{
+    display: block;
+    width: 100%;
+    height: 430px;
+}
+.banner1 a{
+    background: url("../images/banner1.jpg") no-repeat top center;
+}
+.banner2 a{
+    background: url("../images/banner2.jpg") no-repeat top center;
+}
+.banner3 a{
+    background: url("../images/banner3.jpg") no-repeat top center;
+}
+.banner4 a{
+    background: url("../images/banner4.jpg") no-repeat top center;
+}
+.banner5 a{
+    background: url("../images/banner5.jpg") no-repeat top center;
+}
+.b-icon{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -30px;
+}
+.b-item{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url("../images/slider_icon.png") no-repeat 0 -27px;
+    cursor: pointer;
+}
+.active{
+    background: url("../images/slider_icon.png") no-repeat -2px 0px;
+    width: 60px;
+    height: 18px;
+}
+.b-prev,.b-next{
+    width: 40px;
+    height: 70px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    background:url("../images/slider_icon.png") no-repeat 0 -79px;
+    top: -240px;
+    z-index: 10;
+}
+.b-prev{
+    left:-610px;
+}
+.b-next{
+    right: -500px;
+    background:url("../images/slider_icon.png") no-repeat -60px -79px;
+}
+.nav{
+    width: 100%;
+    height: 110px;
+    background:url("../images/nav_bg.jpg") repeat-x;
+}
+.nav ul{
+    background-color: #000;
+}
+.nav ul li{
+    float: left;
+    width: 163px;
+    height: 110px;
+    background: url("../images/global.jpg") no-repeat 1px 0;
+    transition: all 0.2s ease 0s;
+}
+.nav ul li:hover{
+    background: url("../images/global.jpg") no-repeat 1px -110px;
+}
+.nav ul li a{
+    display: block;
+    width: 162px;
+    height: 88px;
+    padding-top: 22px;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    color: #cbcbcb;
+}
+.nav a i{
+    background: url("../images/global.png");
+    display: block;
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+    margin: 0 auto 10px;
+    transition: all 0.2s ease 0s;
+
+}
+.nav_login a i{
+    background-position: 0 -235px;
+}
+.nav_login a:hover i{
+    background-position:0 -274px;
+}
+.nav_game a i{
+    background-position: -49px -235px;
+}
+.nav_game a:hover i{
+    background-position: -49px -274px;
+}
+.nav_mon a i{
+    background-position: -98px -235px;
+}
+.nav_mon a:hover i{
+    background-position: -98px -274px;
+}
+.nav_serv a i{
+    background-position: -147px -235px;
+}
+.nav_serv a:hover i{
+    background-position: -147px -274px;
+}
+.nav_safe a i{
+    background-position: -98px -318px;
+}
+.nav_safe a:hover i{
+    background-position: -98px -357px;
+}
+.nav_home a i{
+    background-position: -147px -318px;
+}
+.nav_home a:hover i{
+    background-position: -147px -357px;
+}
+.content{
+    padding-top: 30px;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #efefef;
+}
+.games{
+    position: relative;
+}
+.games h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: #303030;
+    margin: 0 0 12px;
+    position: relative;
+}
+.games a.game_prev,
+.games a.game_next{
+    position: absolute;
+    top: 8px;
+    width: 20px;
+    height: 19px;
+    background: url("../images/global.jpg") -166px -178px;
+    right: 0;
+}
+.games a.game_prev{
+    right: 24px;
+}
+.games a.game_next{
+    background: url("../images/global.jpg") -166px -50px;
+}
+.gamelist{
+    width: 979px;
+    height: 416px;
+    border: 1px solid #e6e6e6;
+    position: relative;
+    overflow: hidden;
+}
+.gamelist ul{
+    width: 1176px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gamelist ul li{
+    float: left;
+    width: 181px;
+    height: 194px;
+    margin: 7px;
+    border-bottom: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    background-color: #ffffff;
+}
+.gamelist li a{
+    display: block;
+    width: 175px;
+    height: 28px;
+    padding: 166px 3px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #303030;
+    position: relative;
+}
+.gamelist li a strong{
+    line-height: 28px;
+}
+.gamelist li.cs i,
+.gamelist li.ball i,
+.gamelist li.luoqihero i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url("../images/hot.png") no-repeat;
+
+
+}
+.gamelist li.cs2 i,
+.gamelist li.mjage i,
+.gamelist li.mxd i,
+.gamelist li.mob-ppao i,
+.gamelist li.gode i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url("../images/new.png") no-repeat;
+
+}
+.gamelist li.mob-ppao em,
+.gamelist li.gode em,
+.gamelist li.mxd em{
+    position: absolute;
+    bottom: 28px;
+    right: 0;
+    background: url("../images/m_icon.png") no-repeat;
+    width: 43px;
+    height: 43px;
+
+}
+.gamelist li a:hover i{
+    display: none;
+}
+.gamelist li a:hover em{
+    display: none;
+}
+.gamelist li.cs a{
+    background: url("../images/p_csol.jpg") no-repeat 0 -194px;
+}
+.gamelist li.ball a{
+    background: url("../images/p_fs2.jpg") no-repeat 0 -194px;
+}
+.gamelist li.luoqihero a{
+    background: url("../images/p_mh.jpg") no-repeat 0 -194px;
+}
+.gamelist li.eve a{
+    background: url("../images/p_eveol.jpg") no-repeat 0 -194px;
+}
+.gamelist li.ppao a{
+    background: url("../images/p_popkart.jpg") no-repeat 0 -194px;
+}
+.gamelist li.fbao a{
+    background: url("../images/p_tf.jpg") no-repeat 0 -194px;
+}
+.gamelist li.cs2 a{
+    background: url("../images/p_csol2.jpg") no-repeat 0 -194px;
+}
+.gamelist li.mjage a{
+    background: url("../images/p_azera.jpg") no-repeat 0 -194px;
+}
+.gamelist li.luoqi a{
+    background: url("../images/p_luoqi.jpg") no-repeat 0 -194px;
+}
+.gamelist li.mxd a{
+    background: url("../images/m_maplestory.jpg") no-repeat 0 -194px;
+}
+.gamelist li.mob-ppao a{
+    background: url("../images/m_popkart.jpg") no-repeat 0 -194px;
+}
+.gamelist li.gode a{
+    background: url("../images/p_zhushe.jpg") no-repeat 0 -194px;
+}
+.gamelist li.cs a:hover{
+    background: url("../images/p_csol.jpg") no-repeat 0 0;
+}
+.gamelist li.ball a:hover{
+    background: url("../images/p_fs2.jpg") no-repeat 0 0;
+}
+.gamelist li.luoqihero a:hover{
+    background: url("../images/p_mh.jpg") no-repeat 0 0;
+}
+.gamelist li.eve a:hover{
+    background: url("../images/p_eveol.jpg") no-repeat 0 0;
+}
+.gamelist li.ppao a:hover{
+    background: url("../images/p_popkart.jpg") no-repeat 0 0;
+}
+.gamelist li.fbao a:hover{
+    background: url("../images/p_tf.jpg") no-repeat 0 0;
+}
+.gamelist li.cs2 a:hover{
+    background: url("../images/p_csol2.jpg") no-repeat 0 0;
+}
+.gamelist li.mjage a:hover{
+    background: url("../images/p_azera.jpg") no-repeat 0 0;
+}
+.gamelist li.luoqi a:hover{
+    background: url("../images/p_luoqi.jpg") no-repeat 0 0;
+}
+.gamelist li.mxd a:hover{
+    background: url("../images/m_maplestory.jpg") no-repeat 0 0;
+}
+.gamelist li.mob-ppao a:hover{
+    background: url("../images/m_popkart.jpg") no-repeat 0 0;
+}
+.gamelist li.gode a:hover{
+    background: url("../images/p_zhushe.jpg") no-repeat 0 0;
+}
+
